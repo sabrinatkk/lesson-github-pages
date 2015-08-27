@@ -82,8 +82,8 @@ build off of your work when leading their own session. We're firm believers in c
 Due to scheduling, some people won't be able to make it to your session, despite wanting to.
 In some cases, they physically can't make it, and a live screencast would benefit them. In
 other cases, they're busy, but would like to watch the lesson when they get the time. Posting
-the screencast somewhere online enables this. We've included instructions below on how to set
-up Google Hangouts On Air, which makes live screencasting rather painless. 
+the screencast somewhere online enables this. We've included instructions [below](#How-to-Screencast-a-Study-Group-Session)
+on how to set up Google Hangouts On Air, which makes live screencasting rather painless. 
 
 ## How to Screencast a Study Group Session
 
