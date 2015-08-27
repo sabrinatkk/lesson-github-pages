@@ -7,6 +7,8 @@ as it can be a software package.
 
 ## Checklist (tl;dr)
 
+You can edit this file and check the items below by changing `[ ]` to `[x]`. 
+
 * [ ] Design lesson to last approximately one hour
 * [ ] Explain the motivation for using this tool
 * [ ] Code along as opposed to code lecturing
