@@ -27,13 +27,7 @@ lesson notes afterwards, if need be. If you speed through the end, you'll lose
 your audience and they won't appreciate as much the value of the tool you're 
 presenting. 
 
-### 2. Try not to be too domain-specific
-
-We welcome scientific programmers from all fields. Accordingly, your lesson shouldn't
-be too domain-specific. It's okay to use your own data as part of the demonstration, 
-but be sure to highlight the value of the tool for other contexts as well. 
-
-### 3. Explain the motivation for using this tool
+### 2. Explain the motivation for using this tool
 
 Which problems does your tool solve? What differentiates the tool you're demonstrating
 from alternatives? What is it good at? What is it not so good at? Spending some time
@@ -41,13 +35,19 @@ on the motivation for learning about this new tool and setting up the problem is
 essential for engaging your audience. It provides them with a context for an otherwise
 unfamiliar "thing". 
 
-### 4. Code along as opposed to code lecturing
+### 3. Code along as opposed to code lecturing
 
 Demonstrating a tool as a code along is much more enjoyable than reading code off of 
 slides. It ensures that every one feels like they're on the same boat. And when they
 attain some milestone during the session, they get to feel that sense of achievement
 that is absent from code lectures. So, be sure to circulate any lesson notes and
 especially data that will be used in the lesson beforehand. 
+
+### 4. Try not to be too domain-specific
+
+We welcome scientific programmers from all fields. Accordingly, your lesson shouldn't
+be too domain-specific. It's okay to use your own data as part of the demonstration, 
+but be sure to highlight the value of the tool for other contexts as well. 
 
 ### 5. Include a few challenge problems (2-3)
 
