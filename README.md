@@ -85,30 +85,17 @@ up Google Hangouts On Air, which makes live screencasting rather painless.
 
 ## How to Screencast a Study Group Session
 
-### Setup (for organizers)
-
-1. Log in to Google with the study group account. 
-2. Visit the Hangouts On Air page for the study group Google+ page. 
-  1. Visit the study group's Google+ page.
-  2. In the drop-down menu at the top-left of the page, click on Hangouts.
-  3. At the top, click on the Hangouts on Air tab in the centre. 
-5. Click the "Create a Hangout On Air" button. 
-6. Name the Hangout using the following format: YYYY-MM-DD Topic Name, by Presenter Name
-  * An example would be: 2015-07-21 Introduction to Regular Expressions, by Bruno Grande
-7. If the presentation is imminent, select "Starts Now". Otherwise, select "Later" and indicate the date and time. 
-8. When the time comes, follow the broadcast instructions below. 
-
-### Broadcast (for presenters)
+### Setup
 
 1. Ensure that you meet the [minimum requirements](https://support.google.com/hangouts/answer/1216376) for Google Hangouts. 
 2. If so, install the [Google Hangouts plugin](https://tools.google.com/dlpage/hangoutplugin) if you don't already have it. 
-3. Log in to Google with the study group account. Ask an organizer for this.
-4. Visit the event page for the Hangout on Air. 
-  1. Visit the study group's Google+ page.
-  2. In the drop-down menu at the top-left of the page, click on Events.
-  3. Click on the relevant Hangouts On Air event. 
-5. Click on the Start button. 
-6. Skip the "Invite guests" step. 
-7. Switch the video to your screen by enabling the Screenshare app (look for green icon on the left-hand side).
-  * If you will be switching between windows during the lesson, it would be best that you screenshare the entire screen.
-8. Wait until the loading is ready (at the bottom) and then click "Start Broadcast". 
+3. Visit the [Hangouts On Air page](https://plus.google.com/hangouts/onair) and click the "Create a Hangout On Air" button. 
+4. Sign in to Google if you're not already. 
+5. Add in the details about the lesson (title, date and time) and create the Hangouts event. 
+
+### Broadcast
+
+1. Visit the [Events page](https://plus.google.com/events) and click on the Hangouts event you created earlier. 
+2. Click on the Start button and skip the "Invite guests" step. 
+3. Enable the Screenshare app (look for the green icon on the left-hand side) and select the "Entire Screen" option.
+4. Wait until the loading is ready (at the bottom) and then click "Start Broadcast". 
