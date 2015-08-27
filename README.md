@@ -2,64 +2,86 @@
 
 We want your workshops to be the best they can be. We believe in a dynamic teaching style 
 that engages the audience. To achieve this, here are a few guidelines for leading a study 
-group session. 
+group session. We use the term "tool" below, but this can as well be a programming language
+as it can be a software package. 
 
 ## Checklist (tl;dr)
 
-* [ ] Testing checkbox
+* [ ] Design lesson to last approximately one hour
+* [ ] Explain the motivation for using this tool
+* [ ] Code along as opposed to code lecturing
+* [ ] Try not to be too domain-specific
+* [ ] Include a few challenge problems (2-3)
+* [ ] Keep toolbox as simple as possible
+* [ ] Publish the lesson notes online for others to use
+* [ ] Publish screencast online
 
-## The Longer Version
+## Checklist (--verbose)
 
-### 1. Design the lesson for a one-hour time slot
+### 1. Design lesson to last approximately one hour
 
-It's hard to time a hands-on lesson because it depends on your audience and their 
-preferred pace. Your best bet is to plan to cover the basics within an hour at a slow 
-pace, but have some extra optional material at the end if things go faster than expected. 
-Importantly, if you do not get through everything, it's okay. It's better that you leave 
-stuff out than rush through the material. Your notes will (hopefully) be published, so
-people can learn in their own time afterwards. 
+While it's hard to time a hands-on lesson, try to design it such that it lasts 
+approximately one hour. Importantly, if you don't get through everything, it's
+okay. It's better to leave stuff out and allow the audience to look up your
+lesson notes afterwards, if need be. If you speed through the end, you'll lose
+your audience and they won't appreciate as much the value of the tool you're 
+presenting. 
 
-### 2. Ensure the topic is of general interest
+### 2. Try not to be too domain-specific
 
-This study group is for scientific programmers. Hence, the audience members will come from 
-diverse backgrounds. Your lesson should take this into account and not be too domain-
-specific. Of course, you can use your own data for demonstration purposes, but try to keep 
-the problems you are trying to solve with your programming tool to those of general 
-interest. 
+We welcome scientific programmers from all fields. Accordingly, your lesson shouldn't
+be too domain-specific. It's okay to use your own data as part of the demonstration, 
+but be sure to highlight the value of the tool for other contexts as well. 
 
-### 3. Start of with the motivation for what you are teaching
+### 3. Explain the motivation for using this tool
 
-What problem can the tool you are teaching solve? Why is that tool ideal for solving that 
-problem? Spending 2-5 minutes on the motivation for learning the tool and setting up the 
-problem is essential to engage your learners.
+Which problems does your tool solve? What differentiates the tool you're demonstrating
+from alternatives? What is it good at? What is it not so good at? Spending some time
+on the motivation for learning about this new tool and setting up the problem is
+essential for engaging your audience. It provides them with a context for an otherwise
+unfamiliar "thing". 
 
-### 4. No lecture slides, just live demos
+### 4. Code along as opposed to code lecturing
 
-It's much more engaging if you demonstrate the code you're presenting as opposed to just 
-lecturing. It ensures that your audience can follow you as you go along. Also, please send 
-the organizers the data files your audience will need to follow along with you ahead of 
-the session you are leading.
+Demonstrating a tool as a code along is much more enjoyable than reading code off of 
+slides. It ensures that every one feels like they're on the same boat. And when they
+attain some milestone during the session, they get to feel that sense of achievement
+that is absent from code lectures. So, be sure to circulate any lesson notes and
+especially data that will be used in the lesson beforehand. 
 
-### 5. Include some challenge questions
+### 5. Include a few challenge problems (2-3)
 
-One easy way to test if your audience is understanding what you're demonstrating is to 
-provide them with challenge questions. It allows you to make sure everyone is on the same 
-page and help out those who are having trouble. And who doesn't enjoy the rush of dopamine 
-when you get something to work?
+While it might be easy to code along mindlessly by copying the presenter, challenge
+problems allow the audience to take some time to synthesize what they've just learned
+and apply it in some useful way. Furthermore, it gives a chance for yourself and helpers
+to swoop in and help out anyone who got stuck at a certain point. Finally, why would we
+take away the opportunity for the audience to experience that rush of dopamine when 
+you get something to work? 
 
-### 6. Use the Sticky Note Method™
+### 6. Keep toolbox as simple as possible
 
-We're not gonna lie about this: this idea is straight-up taken from Software Carpentry's 
-book, because it works! The organizers will be providing each audience member with two 
-differently coloured sticky notes. One will signify "I'm good!", while the other will 
-signal "Help!" During challenge questions, this will allow those who raised the "I'm good" 
-flag to help each other out. Collaboration is key!
+It might be tempting to show off more than one tool during the demonstration. In fact,
+it's probably more representative of what happens in practice. However, with every new
+tool that's introduced in a lesson, there's a significant burden in terms of cognitive
+load put upon the audience. This distracts from the tool that's being demonstrated. 
+Hence, we recommend that you restrict your toolbox to the strict necessary to do your
+tool justice. 
 
-### 7. Share the love! (And the notes)
+### 7. Publish the lesson notes online for others to use
 
-As we've said, we're all about collaboration. This includes sharing your lesson notes. 
-Not only does this permit study group members to refer back to the lesson, but it also 
-allows others (here or elsewhere) to give the lesson themselves. 
+If you're reading off this template, you're already off to a good start. Ideally, you
+can fork this repository and add your notes and data. By having your lesson hosted online
+(_e.g._ like GitHub), it allows two things to happen: the audience have a resource they 
+can revisit later when they wish to use the tool you demonstrated, and others can use and 
+build off of your work when leading their own session. We're firm believers in collaboration!
+
+### 8. Publish screencast online
+
+Due to scheduling, some people won't be able to make it to your session, despite wanting to.
+In some cases, they physically can't make it, and a live screencast would benefit them. In
+other cases, they're busy, but would like to watch the lesson when they get the time. Posting
+the screencast somewhere online enables this. We've included instructions below on how to set
+up Google Hangouts On Air, which makes live screencasting rather painless. 
 
 ## How to Screencast a Study Group Session
 
