@@ -154,6 +154,7 @@ Using the command-line, we achieve these steps as follows.
 
 ```bash
 # Include all changes made in the repository for the next commit
+# Here, the . refers to the current directory, namely the entire repository
 git add .
 # Commit the changes by giving a message describing the change
 git commit -m 'deleted CNAME file'
@@ -173,3 +174,144 @@ Now, if you visit the GitHub page for your website, you should see your
 commit. 
 
 ![Commit](images/5-commit.png)
+
+----
+
+#### Challenge Problem 1
+
+Edit the _config.yml file according to your preferences. When you're done, 
+commit and push those changes to GitHub.
+
+**Hint:** If you've installed Jekyll, you can preview your website locally
+by opening a new Bash shell, changing to your repository directory and running 
+`jekyll serve`. There will be a URL (_e.g._ http://127.0.0.1:4000/) you can visit. 
+
+*Answers to challenge problems are located at the bottom of this lesson.*
+
+----
+
+After pushing these changes to GitHub, you can visit your website's URL
+(`<username>.github.io`) to see the changes take effect. It might take a few 
+minutes for them to appear online. 
+
+#### Creating our First Blog Post
+
+Next up is creating our first blog post! The Pixyll template makes it painless
+for us to accomplish this. Blog posts are stored in the _posts subdirectory.
+We're gonna delete all but one, which we are gonna edit into our own post. 
+Conveniently, there's only one 2015 post, so we're gonna remove all 2014 posts.
+
+```bash
+# Delete all but one blog posts
+rm _posts/2014-*
+```
+
+Let's rename this blog post into our blog inauguration accouncement.
+
+```bash
+# Rename remaining post into something else
+mv _posts/2015-07-11-announcing-pixyll-version-2.md _posts/2015-09-01-first-blog-post.md
+```
+
+Now, open this Markdown file in a text editor and change it to whatever you want
+while sticking to the template, of course. Leave the layout as `post` and categories
+can be anything you want; they're like tags. For something like this, you can
+use `general`, but whenever you write more scientific posts, you can use a
+`science` category.
+
+Here's my example: 
+
+```
+---
+layout:     post
+title:      First Blog Post!
+date:       2015-09-01
+summary:    This is my first blog post
+categories: general
+---
+
+May this be the beginning of something great!
+
+```
+
+Let's commit and push these changes to GitHub. Since we only changed the 
+contents of the _posts directory, we only need to add it to the staging area.
+
+```bash
+# In this case, we can only add _posts to the staging area
+git add _posts
+# Then, we commit
+git commit -m 'my first blog post!'
+# Let's go live!
+git push
+```
+
+Once again, you can visit your website's URL (`<username>.github.io`) to
+see your blog post go live. You might have to wait a few minutes first. 
+
+----
+
+#### Challenge Problem 2
+
+Edit the about.md file so that it describes you and what you do. 
+When you're done, commit and push those changes to GitHub.
+
+*Answers to challenge problems are located at the bottom of this lesson.*
+
+----
+
+## Answers to Challenge Problems
+
+#### Challenge Problem 1
+
+I changed my _config.yml as follows. I only included the sections I edited. 
+
+```yaml
+# Site settings
+title:       Bruno's Blog
+email:       bgrande@sfu.ca
+author:      Bruno Grande
+description: "Where I write about my thoughts and experiences"
+baseurl:     ""
+url:         "http://brunogrande.github.io"
+date_format: "%b %-d, %Y"
+
+[...]
+
+# Optional features
+animated:           true
+```
+
+Once I'm done with my changes, I can commit and push them to GitHub as follows.
+
+```bash
+git add .
+git commit -m 'modified config to my liking'
+git push
+```
+
+#### Challenge Problem 2
+
+Your approach should be the same as in Challenge Problem 1. Here's my
+`about.md` file. 
+
+```
+---
+layout: page
+title: About Me
+permalink: /about/
+---
+
+My name is Bruno Grande and I'm a graduate student at SFU. 
+I work in Ryan Morin's lab in the Department of Molecular Biology
+and Biochemistry. Despite that, I exclusively do computational biology.
+In essence, I use computation to answer biological questions. In our lab, 
+our questions focus on cancer genomics, a growing field enabled by next-
+generation sequencing. 
+
+Check out my [GitHub page](https://github.com/brunogrande) for some of my 
+open-source projects, and [Twitter](https://twitter.com/grandebruno) for my 
+quick thoughts. 
+```
+
+Once you're done editing your About page, commit and push as usual. 
