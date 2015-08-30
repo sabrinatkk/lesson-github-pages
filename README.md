@@ -10,13 +10,13 @@ as it can be a software package.
 You can edit this file and check the items below by changing `[ ]` to `[x]`. 
 
 * [ ] Design lesson to last approximately one hour
-* [ ] Explain the motivation for using this tool
-* [ ] Code along as opposed to code lecturing
-* [ ] Try not to be too domain-specific
-* [ ] Include a few challenge problems (2-3)
-* [ ] Keep toolbox as simple as possible
-* [ ] Publish the lesson notes online for others to use
-* [ ] Publish screencast online
+* [x] Explain the motivation for using this tool
+* [x] Code along as opposed to code lecturing
+* [x] Try not to be too domain-specific
+* [x] Include a few challenge problems (2-3)
+* [x] Keep toolbox as simple as possible
+* [x] Publish the lesson notes online for others to use
+* [x] Publish screencast online
 
 ## Checklist (--verbose)
 
