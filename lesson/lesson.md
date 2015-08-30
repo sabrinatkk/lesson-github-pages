@@ -72,8 +72,8 @@ address. To rename your repository, visit the Settings page.
 Let's change the repository's description to something more adequate.
 For example, the description can be "My Personal Website" and the
 website will be the same URL as above, `<username>.github.io`. You
-can edit the description by clicking the "Edit" link beneath the repository
-name at the top. 
+can edit the description by clicking the "Edit" link beneath the 
+repository name at the top. 
 
 ![Description](images/3-description.png)
 
@@ -109,9 +109,9 @@ do next.
 ### Personalizing your Website
 
 Now that you've cloned your website repository, we need to make a few
-changes. First of all, we need to delete the file called `CNAME`, which
-is meant to be used for custom domains. Otherwise, we'll keep receiving
-email notifications that the CNAME is already taken. 
+changes. First of all, we need to delete the file called `CNAME`, 
+whichis meant to be used for custom domains. Otherwise, we'll keep 
+receiving email notifications that the CNAME is already taken. 
 
 ```bash
 # Enter your repository directory
@@ -183,23 +183,25 @@ Edit the _config.yml file according to your preferences. When you're done,
 commit and push those changes to GitHub.
 
 **Hint:** If you've installed Jekyll, you can preview your website locally
-by opening a new Bash shell, changing to your repository directory and running 
-`jekyll serve`. There will be a URL (_e.g._ http://127.0.0.1:4000/) you can visit. 
+by opening a new Bash shell, changing to your repository directory and 
+running `jekyll serve`. There will be a URL (_e.g._ http://127.0.0.1:4000/) 
+you can visit. 
 
 *Answers to challenge problems are located at the bottom of this lesson.*
 
 ----
 
 After pushing these changes to GitHub, you can visit your website's URL
-(`<username>.github.io`) to see the changes take effect. It might take a few 
-minutes for them to appear online. 
+(`<username>.github.io`) to see the changes take effect. It might take a 
+few minutes for them to appear online. 
 
 #### Creating our First Blog Post
 
-Next up is creating our first blog post! The Pixyll template makes it painless
-for us to accomplish this. Blog posts are stored in the _posts subdirectory.
-We're gonna delete all but one, which we are gonna edit into our own post. 
-Conveniently, there's only one 2015 post, so we're gonna remove all 2014 posts.
+Next up is creating our first blog post! The Pixyll template makes it 
+painless for us to accomplish this. Blog posts are stored in the _posts 
+subdirectory. We're gonna delete all but one, which we are gonna edit into 
+our own post. Conveniently, there's only one 2015 post, so we're gonna 
+remove all 2014 posts.
 
 ```bash
 # Delete all but one blog posts
@@ -213,11 +215,11 @@ Let's rename this blog post into our blog inauguration accouncement.
 mv _posts/2015-07-11-announcing-pixyll-version-2.md _posts/2015-09-01-first-blog-post.md
 ```
 
-Now, open this Markdown file in a text editor and change it to whatever you want
-while sticking to the template, of course. Leave the layout as `post` and categories
-can be anything you want; they're like tags. For something like this, you can
-use `general`, but whenever you write more scientific posts, you can use a
-`science` category.
+Now, open this Markdown file in a text editor and change it to whatever 
+you want while sticking to the template, of course. Leave the layout as  
+`post` and categoriescan be anything you want; they're like tags. For 
+something like this, you can use `general`, but whenever you write more 
+scientific posts, you can use a `science` category.
 
 Here's my example: 
 
@@ -234,8 +236,9 @@ May this be the beginning of something great!
 
 ```
 
-Let's commit and push these changes to GitHub. Since we only changed the 
-contents of the _posts directory, we only need to add it to the staging area.
+Let's commit and push these changes to GitHub. Since we only changed 
+the contents of the _posts directory, we only need to add it to the 
+staging area.
 
 ```bash
 # In this case, we can only add _posts to the staging area
@@ -282,7 +285,8 @@ date_format: "%b %-d, %Y"
 animated:           true
 ```
 
-Once I'm done with my changes, I can commit and push them to GitHub as follows.
+Once I'm done with my changes, I can commit and push them to 
+GitHub as follows.
 
 ```bash
 git add .
@@ -292,8 +296,8 @@ git push
 
 #### Challenge Problem 2
 
-Your approach should be the same as in Challenge Problem 1. Here's my
-`about.md` file. 
+Your approach should be the same as in Challenge Problem 1. Here's 
+my `about.md` file. 
 
 ```
 ---
