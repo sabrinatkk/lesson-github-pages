@@ -46,17 +46,15 @@ GitHub Pages. This just comes to show how powerful it can be.
 You can write your own website from scratch, but that takes time
 and knowledge about HTML, CSS, JavaScript and Jekyll, the underlying
 platform used by GitHub Pages. Instead, we'll kickstart our website
-by using a template. For this lesson, I'll be using the [Pixyll template]
-(https://github.com/johnotander/pixyll), but there are [many options]
-(http://jekyllthemes.org/) out there. I mostly learned HTML and CSS by
-starting off with a template and tweaking it bit by bit. You can do the
-same!
+by using a template. For this lesson, I'll be using the [Jekyll Now template]
+(https://github.com/barryclark/jekyll-now), but there are [many options]
+(http://jekyllthemes.org/) out there. 
 
-The Pixyll template repository is owned by [John Otander]
-(https://github.com/johnotander), meaning that we can't edit it as is. 
+The Jekyll Now template repository is owned by [Barry Clark]
+(https://github.com/barryclark), meaning that we can't edit it as is. 
 We need to create a copy of the repository under our account first. This
 is called forking the repository. You may visit the [repository page]
-(https://github.com/johnotander/pixyll) and click the Fork button at the
+(https://github.com/barryclark/jekyll-now) and click the Fork button at the
 top-right. If GitHub prompts your to select an account to store the fork
 under, choose your personal GitHub account. 
 
@@ -70,7 +68,7 @@ address. To rename your repository, visit the Settings page.
 ![Rename](images/2-rename.png)
 
 Let's change the repository's description to something more adequate.
-For example, the description can be "My Personal Website" and the
+For example, the description can be "My personal blog" and the
 website will be the same URL as above, `<username>.github.io`. You
 can edit the description by clicking the "Edit" link beneath the 
 repository name at the top. 
@@ -87,10 +85,11 @@ sure you click the small HTTPS link and then copy the repository link.
 ![Link](images/4-link.png)
 
 Now, open a Bash shell. Navigate to where you want to store your local 
-copy of the website. For instance, I have a `Repos` directory. Then, 
-run the git clone command using the link your copied. Git might ask
-for your GitHub login information. You may avoid this by [setting up
-SSH keys](https://help.github.com/articles/generating-ssh-keys/). 
+copy of the website. For instance, I have a `Repos` directory where I 
+store all of my Git repositories. Then, run the git clone command using 
+the link your copied. Git might ask for your GitHub login information. 
+You may avoid this by [setting up SSH keys]
+(https://help.github.com/articles/generating-ssh-keys/). 
 
 ```bash
 # Create a Repos directory in your home folder
@@ -108,31 +107,45 @@ do next.
 
 ### Personalizing your Website
 
-Now that you've cloned your website repository, we need to make a few
-changes. First of all, we need to delete the file called `CNAME`, 
-whichis meant to be used for custom domains. Otherwise, we'll keep 
-receiving email notifications that the CNAME is already taken. 
+With this template, the first step to personalizing your blog
+is editing the configuration file, namely `_config.yml`. This
+file contains a few site-wide attributes, such as the blog
+title and the image displayed at the top-left. Open `_config.yml`
+and edit it to your liking. 
+
+For the avatar, you can use your GitHub avatar. To get the URL,
+visit your GitHub profile, right-click your profile picture and
+select "Copy Image URL" (or the equivalent in your browser).
+
+----
+
+Those who took the time to install Jekyll can preview their
+blog locally by running the following command in a new Bash shell
+within their blog repository. To install Jekyll, run the command
+`gem install github-pages` (OS X and Linux only; sorry, Windows 
+users). You might have to run it with `sudo` prepended to the 
+command.
 
 ```bash
-# Enter your repository directory
-cd <username>.github.io
-# Delete the CNAME file
-rm CNAME
+jekyll serve --watch
 ```
 
-This is a small change, but let's save it by committing it to the
-Git repository. If you run `git status` in your repository, you'll
-be given a list of changes. Here, we should only have one change: 
-the CNAME file we deleted (see below for example output). 
+----
+
+Now that we've started personalizing our blog, we should save
+this change. In Git parlance, this is called committing. If you
+run `git status` in your repository, you should obtain a list of 
+changed files. In this case, it should only be one file: _config.yml.
+Here's what the output of `git status` should look like.
 
 ```
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
+  (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	deleted:    CNAME
+	modified:   _config.yml
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -141,7 +154,7 @@ When we commit a change like this one, it allows us to track each
 edit we make and this grants us the power of reverting a specific 
 change if we mess up. There are two steps to committing a change:
 
-1. Adding the change to the stage. 
+1. Adding the change to the staging area.
 	- This allows us to pick and choose which changes we want to 
 	commit first, in case there are multiple changes in the repository.
 	- In our case, we only have one change, so this step seems a bit
@@ -153,39 +166,44 @@ change if we mess up. There are two steps to committing a change:
 Using the command-line, we achieve these steps as follows. 
 
 ```bash
-# Include all changes made in the repository for the next commit
-# Here, the . refers to the current directory, namely the entire repository
-git add .
+# Add the changed file to the staging area
+git add _config.yml
 # Commit the changes by giving a message describing the change
-git commit -m 'deleted CNAME file'
+git commit -m 'personalized config'
 ```
 
 This change is now registered as a commit locally, but GitHub isn't
-aware of the change yet. For that, we need to push the commits we've 
-created since running `git clone` to GitHub. In this case, we only have
-one. For this, you simply run `git push`. 
+aware of the change yet. If you were to visit the repository's GitHub
+page, you will notice that `_config.yml` is unchanged. In order to sync
+our repositories, namely the one we cloned locally and the one on Github,
+we need to upload our commits. This is done using the `git push` command.
+You might have to enter your GitHub login information here. This is
+to prove that you are indeed the owner of the repository. 
 
 ```bash
-# Push your changes to GitHub.com
+# Upload/push your changes to GitHub
 git push
 ```
 
-Now, if you visit the GitHub page for your website, you should see your
+Now, if you visit the GitHub page for your repository, you should see your
 commit. 
 
 ![Commit](images/5-commit.png)
+
+And if you visit your actual blog URL (`<username>.github.io`), you can
+see your changes live on the Internet! It might take a few minutes for it
+to update.
+
+![Blog](images/6-blog.png)
+
+### Writing Your First Blog Post
 
 ----
 
 #### Challenge Problem 1
 
-Edit the _config.yml file according to your preferences. When you're done, 
-commit and push those changes to GitHub.
-
-**Hint:** If you've installed Jekyll, you can preview your website locally
-by opening a new Bash shell, changing to your repository directory and 
-running `jekyll serve`. There will be a URL (_e.g._ http://127.0.0.1:4000/) 
-you can visit. 
+Edit the `_posts/2014-3-3-Hello-World.md` file as your first blog post. 
+When you're done, commit and push those changes to GitHub.
 
 *Answers to challenge problems are located at the bottom of this lesson.*
 
@@ -195,69 +213,41 @@ After pushing these changes to GitHub, you can visit your website's URL
 (`<username>.github.io`) to see the changes take effect. It might take a 
 few minutes for them to appear online. 
 
-#### Creating our First Blog Post
+### Update the About Page
 
-Next up is creating our first blog post! The Pixyll template makes it 
-painless for us to accomplish this. Blog posts are stored in the _posts 
-subdirectory. We're gonna delete all but one, which we are gonna edit into 
-our own post. Conveniently, there's only one 2015 post, so we're gonna 
-remove all 2014 posts.
-
-```bash
-# Delete all but one blog posts
-rm _posts/2014-*
-```
-
-Let's rename this blog post into our blog inauguration accouncement.
-
-```bash
-# Rename remaining post into something else
-mv _posts/2015-07-11-announcing-pixyll-version-2.md _posts/2015-09-01-first-blog-post.md
-```
-
-Now, open this Markdown file in a text editor and change it to whatever 
-you want while sticking to the template, of course. Leave the layout as  
-`post` and categoriescan be anything you want; they're like tags. For 
-something like this, you can use `general`, but whenever you write more 
-scientific posts, you can use a `science` category.
-
-Here's my example: 
-
-```
----
-layout:     post
-title:      First Blog Post!
-date:       2015-09-01
-summary:    This is my first blog post
-categories: general
----
-
-May this be the beginning of something great!
-
-```
-
-Let's commit and push these changes to GitHub. Since we only changed 
-the contents of the _posts directory, we only need to add it to the 
-staging area.
-
-```bash
-# In this case, we can only add _posts to the staging area
-git add _posts
-# Then, we commit
-git commit -m 'my first blog post!'
-# Let's go live!
-git push
-```
-
-Once again, you can visit your website's URL (`<username>.github.io`) to
-see your blog post go live. You might have to wait a few minutes first. 
+We're getting somewhere. One last major change we need to do is the About 
+page. This will be our second Challenge Problem. Tackle it just like the
+blog post.
 
 ----
 
 #### Challenge Problem 2
 
-Edit the about.md file so that it describes you and what you do. 
+Edit the `about.md` file so that it describes you and what you do. 
 When you're done, commit and push those changes to GitHub.
+
+*Answers to challenge problems are located at the bottom of this lesson.*
+
+----
+
+### Playing Around with Markdown
+
+Now that we've set up our blog, it's time to become familiar with what
+it can do. Blog posts are written in Markdown format. Read [this page]
+(https://guides.github.com/features/mastering-markdown/) for more
+information about Markdown. 
+
+----
+
+#### Challenge Problem 3
+
+Create a new blog post called "Markdown Madness" exploring various 
+Markdown features. Here are a few things you can try out:
+
+- Syntax-highlighted code
+- Tables
+- Blockquotes
+- Strikethrough text (_e.g._ for edits)
 
 *Answers to challenge problems are located at the bottom of this lesson.*
 
@@ -267,39 +257,46 @@ When you're done, commit and push those changes to GitHub.
 
 #### Challenge Problem 1
 
-I changed my _config.yml as follows. I only included the sections I edited. 
+First of all, I changed the name of the blog post file to be
+accurate. 
 
-```yaml
-# Site settings
-title:       Bruno's Blog
-email:       bgrande@sfu.ca
-author:      Bruno Grande
-description: "Where I write about my thoughts and experiences"
-baseurl:     ""
-url:         "http://brunogrande.github.io"
-date_format: "%b %-d, %Y"
+```bash
+mv _posts/2014-3-3-Hello-World.md _posts/2015-09-01-first-blog-post.md
+```
 
-[...]
+Then 
 
-# Optional features
-animated:           true
+```markdown
+---
+layout: post
+title: My First Blog Post
+---
+
+I followed [my own lesson](https://github.com/brunogrande/lesson-github-pages/blob/master/lesson/lesson.md) 
+to create a personal blog using GitHub Pages. This is an easy (and free) way to 
+take control of your online presence. It provides an avenue to share your thoughts
+online and a centralized location to link to all of your other accounts online
+(_e.g._ Twitter, GitHub and ResearchGate).
 ```
 
 Once I'm done with my changes, I can commit and push them to 
 GitHub as follows.
 
 ```bash
-git add .
-git commit -m 'modified config to my liking'
+# Add the _posts directory to the staging area
+git add _posts
+# Commit the change with a descriptive message
+git commit -m 'created my first blog post'
+# Upload/push commits to GitHub
 git push
 ```
 
 #### Challenge Problem 2
 
 Your approach should be the same as in Challenge Problem 1. Here's 
-my `about.md` file. 
+my modified `about.md` file. 
 
-```
+```markdown
 ---
 layout: page
 title: About Me
@@ -313,9 +310,52 @@ In essence, I use computation to answer biological questions. In our lab,
 our questions focus on cancer genomics, a growing field enabled by next-
 generation sequencing. 
 
+### More Information
+
 Check out my [GitHub page](https://github.com/brunogrande) for some of my 
 open-source projects, and [Twitter](https://twitter.com/grandebruno) for my 
 quick thoughts. 
+
+### Contact me
+
+[bgrande@sfu.ca](mailto:bgrande@sfu.ca)
 ```
 
 Once you're done editing your About page, commit and push as usual. 
+
+#### Challenge Problem 3
+
+Everything is available in [this handy guide]
+(https://guides.github.com/features/mastering-markdown/). Still, here's
+an example. 
+
+```markdown
+---
+layout: post
+title: My First Blog Post
+---
+
+Some code:
+
+```python
+print "Hello, world!"
+```
+
+A table:
+
+| Column 1 | Column 2 |
+| -------- | -------- |
+| One      | 1        |
+| Two      | 2        |
+| Three    | 3        |
+
+A blockquote:
+
+> Imagination is more important than knowledge.
+> —Albert Einstein
+
+Some strikethrough text:
+
+I ~~love~~ hate grad school!
+
+```
