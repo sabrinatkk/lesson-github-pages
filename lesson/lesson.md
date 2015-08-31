@@ -242,12 +242,7 @@ information about Markdown.
 #### Challenge Problem 3
 
 Create a new blog post called "Markdown Madness" exploring various 
-Markdown features. Here are a few things you can try out:
-
-- Syntax-highlighted code
-- Tables
-- Blockquotes
-- Strikethrough text (_e.g._ for edits)
+Markdown features. 
 
 *Answers to challenge problems are located at the bottom of this lesson.*
 
@@ -326,36 +321,6 @@ Once you're done editing your About page, commit and push as usual.
 #### Challenge Problem 3
 
 Everything is available in [this handy guide]
-(https://guides.github.com/features/mastering-markdown/). Still, here's
-an example. 
-
-```markdown
----
-layout: post
-title: My First Blog Post
----
-
-Some code:
-
-```python
-print "Hello, world!"
-```
-
-A table:
-
-| Column 1 | Column 2 |
-| -------- | -------- |
-| One      | 1        |
-| Two      | 2        |
-| Three    | 3        |
-
-A blockquote:
-
-> Imagination is more important than knowledge.
-> —Albert Einstein
-
-Some strikethrough text:
-
-I ~~love~~ hate grad school!
-
-```
+(https://guides.github.com/features/mastering-markdown/). Note that 
+GitHub Flavored Markdown isn't entirely available on the blog. A notable
+exception is syntax highlighting using triple backticks (```). 
