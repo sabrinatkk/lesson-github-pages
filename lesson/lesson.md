@@ -39,9 +39,7 @@ website. Let's get started then!
 **Fun fact:** [SciProg.ca](http://sciprog.ca) is actually hosted on 
 GitHub Pages. This just comes to show how powerful it can be.
 
-## Lesson Notes
-
-### Forking and Cloning a Template
+## Forking and Cloning a Template
 
 You can write your own website from scratch, but that takes time
 and knowledge about HTML, CSS, JavaScript and Jekyll, the underlying
@@ -105,7 +103,7 @@ visit the URL (`username.github.io`), your website should be live.
 Of course, it isn't personalized yet, but this is what we're gonna
 do next. 
 
-### Personalizing your Website
+## Personalizing your Website
 
 With this template, the first step to personalizing your blog
 is editing the configuration file, namely `_config.yml`. This
@@ -117,8 +115,6 @@ For the avatar, you can use your GitHub avatar. To get the URL,
 visit your GitHub profile, right-click your profile picture and
 select "Copy Image URL" (or the equivalent in your browser).
 
-----
-
 Those who took the time to install Jekyll can preview their
 blog locally by running the following command in a new Bash shell
 within their blog repository. To install Jekyll, run the command
@@ -129,8 +125,6 @@ command.
 ```bash
 jekyll serve --watch
 ```
-
-----
 
 Now that we've started personalizing our blog, we should save
 this change. In Git parlance, this is called committing. If you
@@ -196,9 +190,7 @@ to update.
 
 ![Blog](images/6-blog.png)
 
-### Writing Your First Blog Post
-
-----
+## Writing Your First Blog Post
 
 #### Challenge Problem 1
 
@@ -207,19 +199,15 @@ When you're done, commit and push those changes to GitHub.
 
 *Answers to challenge problems are located at the bottom of this lesson.*
 
-----
-
 After pushing these changes to GitHub, you can visit your website's URL
 (`<username>.github.io`) to see the changes take effect. It might take a 
 few minutes for them to appear online. 
 
-### Update the About Page
+## Update the About Page
 
 We're getting somewhere. One last major change we need to do is the About 
 page. This will be our second Challenge Problem. Tackle it just like the
 blog post.
-
-----
 
 #### Challenge Problem 2
 
@@ -228,16 +216,12 @@ When you're done, commit and push those changes to GitHub.
 
 *Answers to challenge problems are located at the bottom of this lesson.*
 
-----
-
-### Playing Around with Markdown
+## Playing Around with Markdown
 
 Now that we've set up our blog, it's time to become familiar with what
 it can do. Blog posts are written in Markdown format. Read [this page]
 (https://guides.github.com/features/mastering-markdown/) for more
 information about Markdown. 
-
-----
 
 #### Challenge Problem 3
 
@@ -245,8 +229,6 @@ Create a new blog post called "Markdown Madness" exploring various
 Markdown features. 
 
 *Answers to challenge problems are located at the bottom of this lesson.*
-
-----
 
 ## Answers to Challenge Problems
 
@@ -305,13 +287,13 @@ In essence, I use computation to answer biological questions. In our lab,
 our questions focus on cancer genomics, a growing field enabled by next-
 generation sequencing. 
 
-### More Information
+## More Information
 
 Check out my [GitHub page](https://github.com/brunogrande) for some of my 
 open-source projects, and [Twitter](https://twitter.com/grandebruno) for my 
 quick thoughts. 
 
-### Contact me
+## Contact me
 
 [bgrande@sfu.ca](mailto:bgrande@sfu.ca)
 ```
