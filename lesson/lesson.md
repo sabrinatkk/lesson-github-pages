@@ -36,9 +36,6 @@ system that I recommend you all use. Many things can be tracked by
 Git: code, papers, results, etc. Today, we'll focus on your personal
 website. Let's get started then!
 
-**Fun fact:** [SciProg.ca](http://sciprog.ca) is actually hosted on 
-GitHub Pages. This just comes to show how powerful it can be.
-
 ## Forking and Cloning a Template
 
 You can write your own website from scratch, but that takes time
@@ -89,12 +86,9 @@ the link your copied. Git might ask for your GitHub login information.
 You may avoid this by [setting up SSH keys]
 (https://help.github.com/articles/generating-ssh-keys/). 
 
+
+Clone the website repository (replace `<username>` with your GitHub.com username):
 ```bash
-# Create a Repos directory in your home folder
-mkdir -p ~/Repos
-# Change directory
-cd ~/Repos
-# Clone the website repository (replace <username>)
 git clone https://github.com/<username>/<username>.github.io.git
 ```
 
@@ -115,19 +109,19 @@ For the avatar, you can use your GitHub avatar. To get the URL,
 visit your GitHub profile, right-click your profile picture and
 select "Copy Image URL" (or the equivalent in your browser).
 
-Those who took the time to install Jekyll can preview their
+> ### (Optional) Serve up your website locally using Jekyll
+> If you install Jekyll on your own computer, you can preview your
 blog locally by running the following command in a new Bash shell
-within their blog repository. To install Jekyll, run the command
-`gem install github-pages` (OS X and Linux only; sorry, Windows 
-users). You might have to run it with `sudo` prepended to the 
-command.
+within your blog repository. To install Jekyll, run the command
+`gem install github-pages` (OS X and Linux only; for Windows 
+users try following the instructions [here](http://jekyll-windows.juthilo.com/)). You might have to run `gem install github-pages` with `sudo` prepended to the command.
 
-```bash
-jekyll serve --watch
-```
+>```bash
+>jekyll serve --watch
+>```
 
-Now that we've started personalizing our blog, we should save
-this change. In Git parlance, this is called committing. If you
+Now that we've started personalizing our blog, we should log
+this change. In Git, this is called committing. If you
 run `git status` in your repository, you should obtain a list of 
 changed files. In this case, it should only be one file: _config.yml.
 Here's what the output of `git status` should look like.
